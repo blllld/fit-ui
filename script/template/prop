@@ -1,0 +1,8 @@
+import type { ExtractPropTypes } from 'vue'
+
+
+export const __nameProps= []
+export const __nameEmits = {}
+
+export type $nameProps = ExtractPropTypes<typeof __nameProps>
+export type $nameEmits = typeof __nameEmits

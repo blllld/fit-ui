@@ -1,0 +1,9 @@
+import { makeInstall } from '../../utils/install'
+
+import $name from './src/__name.vue'
+
+export const Fi$name  = makeInstall($name)
+
+export default Fi$name
+
+export * from './src/#name'

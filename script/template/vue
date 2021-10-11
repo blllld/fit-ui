@@ -1,0 +1,25 @@
+
+<template>
+    <div class="fi-#name">
+        <slot></slot>
+    </div>
+</template>
+<script lang="ts">
+import { defineComponent, reactive, shallowRef, watch, ref,computed, onMounted } from 'vue';
+import { __nameEmits, __nameProps } from './#name'
+
+export default defineComponent({
+    name: "$name",
+    props: __nameEmits,
+    emits: __nameProps,
+    setup(props, { emit }) {
+        onMounted(() => {
+            // TODO: 
+        })
+    }
+});
+</script>
+
+
+<style>
+</style>
